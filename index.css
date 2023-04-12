@@ -1,0 +1,110 @@
+/* Set up the base styles for the body and html */
+.body, html {
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to right, red, blue); /* Background gradient */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Set up the calculator container */
+.container {
+    border: 1px solid rgb(255, 255, 255);
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 28px;
+    padding: 20px;
+}
+
+/* Style the live total display */
+.total {
+    width: 95%;
+    height: 65px;
+    margin-bottom: 4px;
+    font-size: 24px;
+    font-weight: 100;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Style the main display */
+.display {
+    width: 100%;
+    max-width: 200px;
+    height: 75px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: white;
+    font-size: 48px;
+    font-weight: 100;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Style the buttons */
+.number,
+.grey,
+.yellow {
+    width: 50px;
+    height: 50px;    
+    font-size: 20px;
+    border: none;
+    margin: 1px 1px 5px 1px;
+    border-radius: 25px;
+}
+
+/* Style the zero button */
+.zero {
+    width: 106px;
+}
+
+/* Style the grey buttons */
+.grey {
+    background-color: rgb(163, 163, 163);
+    color: black;
+}
+
+/* Style the grey buttons on hover */
+.grey:hover {
+    background-color: rgb(142, 141, 141);
+}
+
+/* Style the number buttons */
+.number {
+    background-color: rgb(23, 50, 50);
+    color: white;
+}
+
+/* Style the number buttons on hover */
+.number:hover {
+    background-color: rgb(18, 39, 39);
+}
+
+/* Style the yellow buttons */
+.yellow {
+    font-size: 24px;
+    background-color: rgb(223, 154, 42);
+    color: white;
+}
+
+/* Style the yellow buttons on hover */
+.yellow:hover {
+    background-color: rgb(194, 134, 38);
+}
