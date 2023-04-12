@@ -35,6 +35,11 @@ function handleNumber(number) {
         display.textContent = '';
         newCalculation = false;
     }
+    const lastCharacter = display.textContent.slice(-1);
+
+    if (number === '.' && (lastCharacter === '.' || !isNaN(lastCharacter) && display.textContent.split(/[-+x÷]/).pop().includes('.'))) {
+        return; // Ignore if there is already a decimal point
+    }
     if (display.textContent === '0') {
         display.textContent = number;
     } else {
